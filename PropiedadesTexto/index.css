@@ -1,0 +1,20 @@
+
+.contactForm{
+    font-size: 25px
+  
+  }
+  .contactForm__h2{
+    font-size: 3em;
+    font-family: 'Labrada';
+    line-height: 1.9;
+    font-weight: 800;
+}
+/*
+
+font-height = es para indicar la altura que ocupara la letra, no la altur de la letra en si, si no el espacio que ocupa, 
+como si nos estuvieramos imaginando una caja invisible que envolviese a la letra, ps seria la altura de esa caja
+fonr-weight = es el grosor de la letra
+Cuando estamos definiendo el tipo de letra ponemos coma para indicar que, si por alguna razon, no hay el tipo Georgia se cargue
+el sans-serif
+
+*/

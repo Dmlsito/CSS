@@ -8,9 +8,38 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    //Al indicarle a un elemento que pertenecen a una clase le estamos indicando que compartira todos los atributos de esa clase
+    <!--Al indicarle a un elemento que pertenecen a una clase le estamos indicando que compartira todos los atributos de esa clase
     <h1 class= "titulo">ESTE ES UN TITULO DE PRUEBA</h1>
     <h1 class= "titulo">ESTE ES OTRO TITULO DE PRUEBA</h1>
+    Los ids tienen que se unicos, ya que no pueden tener dos elementos un mismo id
+    <p id= "idDelElemento">Ese es un parrafo para ver como seleccionar un id</p>
+    <p rancio = "sii">Este es un parrafo para controlar como seleccionar un atributo</p>
+    -->
+
+    <!--Seleccionar con descendientes en CSS-->
+    <!--Si yo en este caso quiero modificar el p que esta debajo, pero solo ESEm sin utilizar id ni clases, ni atributos
+    Tendremos que ir de mas grande a mas pequeno, es decir, tendremos que ir pensando por que esta envuelto la etiqueta que queremos
+    e ir llegando hasta ella 
+    Se puede hacer con clases tmb
+    <h2><p>Esto es una prueba</p></h2>
+    <h2><b>Esto es otra prueba</b></h2>
+    <h2 class= "claseDescendiente"><strong>Otra prueba mas</strong></h2>
+    -->
+    <h1 class= "titulo" id= "blue">TITULO DE TESTING</h1>
+    <div class= "contactForm">
+        <!--Para indicar que estos inputs son de la misma clase que el form tendremos que escribir de la clase a la que "pertenecen" 
+        escribir __ y anadir el nombre que querramos, en este caso escribimos input, pero porque se trata de un input-->
+        <input type = "text" class = "contactForm__input">
+        <input type = "text" class = "contactForm__input">
+        <input type = "password" class = "contactForm__input">
+        <!--Este ultimo input lo definimos del resto indicandolo con los dos -- y con el nombre de active-->
+        <input type = "texy" class = "contactForm__input--active">
+        <p class = "contactForm__p">
+            <!--En este caso como ya la etiqueta del h2 no viene de la etiqueta form que es la principal lo seleccionaremos
+            de esta forma -->
+            <h2 class = "contactForm__p-h2"></h2>
+        </p>
+    </div>
      
-</body>
+</body> 
 </html>

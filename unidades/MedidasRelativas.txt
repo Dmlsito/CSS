@@ -1,0 +1,9 @@
+Si queremos que nuestra pagina sea responsive tendremos que programar con medidas relativas
+1em = 16 pixeles  
+IMPORTANTE -> la medida por defecto de 1em se hereda, es decir, adoptara el valor en pixeles del valor que le demos en la
+caja contenedora. Un ejemplo es el que tenemos en este archivo
+ESTO SIRVE PARA CUALQUIER PROPIEDAD QUE TRABAJE CON UNIDADEAS DE MEDIDA
+
+Con vw cojemos la referencia al ancho de la pantalla, es decir si indicamos 50vw estaremos diciendo que sera la mitad de ancho
+o de la pantalla
+Con vh cojemos la referencia del alto y seria lo mismo que el vw

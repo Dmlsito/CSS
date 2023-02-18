@@ -1,3 +1,31 @@
 .titulo{
     color: red;
 }
+#idDelElemento{
+    color: green;
+}
+[rancio = "sii"]{
+    color: blue;
+}
+h2{
+    color: red;
+}
+h2 p{
+    color: green;
+}
+h2 b{
+    color: blue;
+}
+.claseDescendiente strong{
+    color: greenyellow;
+}
+
+h1{
+color: green !important;
+}
+.titulo{
+    color: red;
+}
+#blue{
+    color: blue;
+}

@@ -1,0 +1,15 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.contactForm{
+    font-size:25px;
+    background-color: #000;
+    width: 50vw;
+
+}
+.contactForm__h2{
+    font-size: 1em;
+}

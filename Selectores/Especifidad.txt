@@ -1,0 +1,8 @@
+En este caso vamos a trabajar sobre el h1 que hemos creado y vamos a ver que es la especificidad.
+Hemos indicado que todos los h1 tengan el color rojo y hemos creado una clase y se la hemos asignado a ese h1 
+Dentro de esa clase le hemos cambiado de color al h1 y lo hemos puesto azul. Entonces que tienes mas jerarquia? 
+Tiene mas jerarquia la clase, sobre un elemento
+Y que pasa con los ids? Ps que tienen mas jerarquia que las clases es decir van a mandar sobre las clases
+Pero a parte de eso, hay algo por encima de los id y las clases que son los estilos en linea
+Pero a parte de eso, hay algo por encima de los estilos en linea, esto son los !important
+Si tu tienes definidos id, clases, estilos en linea, pero ademas de eso tienes un !important, el que manda es el important

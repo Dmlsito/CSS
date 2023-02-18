@@ -1,0 +1,15 @@
+*{
+    font-size: 40px;
+}
+/*Display nos permite cambiar el comportamiento de las cajas*/
+h2{
+    /*A los elementos en linea no se pueden asiganarle un width ni un height, mientras que a los elementos el blqoue SI*/
+    display: inline;
+    height: 100px;
+    width: 200px;
+}
+p{
+    height: 100px;
+    width: 200px;
+}
+

@@ -1,0 +1,1 @@
+La metodologia BEM es una  metodologia que consiste en evitar los conflictos que se pueden ocasionar al crear ids, clases, etc
