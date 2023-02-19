@@ -1,0 +1,21 @@
+.caja1{
+     width: 200px;
+     height: 200px;
+     background-color: red;
+     margin: auto;
+    /* border: 10px solid blue;*/
+     /*box-sizing: content-box;*/
+     /*Aplicando la propiedad del content-box ahora si le anadimos cualquier cosa que tenga un espacio esto se le sumara a las
+     dimensiones ya predefinidas del div, pero si nosotros le ponemos outline en vez de border no pasara esto, y porque?
+     PORQUE OUTLINE NO OCUPA ESPACIO EN EL DOM es decir, ESTA AHI PERO NO ESTA*/
+     outline: 10px solid blue;
+     /*Si te fijas si le quitamos la propiedad de content-box, no cambie y es que en vd da igual la propiedad, lo importante
+     es que no esta ocupando espacio y no va a mover a los demas elementos
+     */
+}
+.caja2{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    margin: auto;
+}

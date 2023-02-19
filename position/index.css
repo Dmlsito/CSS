@@ -1,0 +1,113 @@
+*{
+    font-weight: 900;
+    font-size: 30px;
+    
+}
+
+
+/*
+.caja1{
+    background-color: red;
+}
+.caja2{
+    background-color: green;
+    /*Cuando posicionamos un elemento dicho elemento adquirira cuatro posiciones nuevas, top, bottom, right, left
+    Lo que conseguimos utilizando la propiedad relative es que el espacio asignado a la caja se sigue conservando
+    Por ejemplo si modificamos el top la caja se va para abajo pero vemos que el espacio que ocupaba antes sigue estando 
+    reservado
+    position: relative;
+    top: 60px;
+    left: 20px;
+    z-index: 1;
+    /*El top y el left tienen mas "jerarquia", de esta manera si nosotros a esto le agregasemos un bottom o un right no 
+    surtirian ningun efecto
+    A MAYORES DE LAS CUATRO POSICIONES QUE HEMOS VISTO ANTERIORMENTE QUE ADQUIERE, ADQUIERE UNA MAS, ESTA ES EL ZINDEX
+    que se utiliza para posicionar los elementos por encima de otros
+    Cuando llamamos relativos a dos cajas las dos pasaran a tener un zindex de 0, pero si por ejemplo a la caja2 le ponemos
+    zindez: 1 la caja 2 se sobrepondra
+    
+    
+}
+.caja3{
+    background-color: blue;
+    position: relative;
+}
+*/
+/*
+.contenedorPadre{
+    width: 300px;
+    height: 300px;
+    background-color: blue; 
+    margin: 40px;
+    position: relative;
+   
+}
+.contenedorHijo{
+    background-color: orange;
+    height: 120px;
+    width: 120px; 
+    position: relative;
+    top: -20px;
+    left: -20px;
+    z-index: -1; 
+}
+/*IMPORTANTE Z-INDEX PADRE HIJO
+NUNCA PODREMOS POSICIONAR UN PADRE POR ENCIMA DEL HIJO AUN ASIGNANDOLES EL RELATIVE A LOS DOS Y TENIENDO EL PADRE UN MAYOR
+Z-INDEX, LA UNICA MANERA DE PODER HACER ESO SERIA HACER LO SIGUIENTE ->
+AL HIJO INDICARLE QUE TIENE UN Z-INDEX -1 Y NO DEFINIRLE UN Z-INDEX AL PADRE
+*/
+
+/*POSITION ABSOLUTE*/
+/*
+A diferencia del position: relative el position: absolute no reserva el espacio, de la caja en donde se nombre, es decir
+lo que ha pasado aqui es que al no estar reservado el espacio la caja 3 se ha posicionado donde esta la caja 2 y la caja 2 se ha superpuesto
+ocultandola
+El punto de referencia ahora es el viwport es decir la pantalla entera, a diferencia del position: relative, que era el elemento que estuviera encima deste
+*/
+/*
+El punto de referencia podria cambiar si por ejemplo como vemos aqui se enontrasen dentro de un elemento, ya que el punto 
+pasaria a ser el propio elemento, pero para eso el elemento deberia estar POSICIONADO, por eso si cambiamos y ponemos en el 
+contenedor2 position: relative, ahora para colocar las cajas a cada esquina del contenedor tendriamos que tomarlo a el como referencia*/
+div{
+    display: block;
+    background: green;
+    position: absolute;
+} 
+div div{
+    width: 100px;
+    height: 100px;
+    background: yellow;
+
+}
+.contenedor2{
+    position: relative;
+    border: 4px solid red;
+    height: 450px;
+    width: 450px;
+}
+.caja1{
+    
+    left: 0px;
+    bottom: 0px;
+}
+.caja2{
+   left: 0px;
+   top: 0px;
+
+}
+.caja4{
+    right: 0px;
+    bottom: 0;
+}
+.caja3{
+    top: 0px;
+    right: 0px;
+} 
+.caja5{
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0px;
+    left: 0px
+    
+}

@@ -1,0 +1,35 @@
+
+h2{
+    background-color: red;
+    /*La propiedad inline-block es para indicarle al elemento que se posicione en linea pero teniendo las propiedades
+    de que se posicione en bloque*/
+    display: inline-block;
+    border-radius: 2px;
+    text-align: center;
+    /*
+    El padding se puede utilizar de esta forma, que es una forma acortada, pero tambien podriamos indicarle el padding del top,
+    left, bottom, ect.
+    */
+    padding:100px;
+    margin: 20px 10px;
+    box-sizing: border-box;
+    border-radius: 2em;
+    box-shadow: 4px, 5px, 10px, 0, #000;
+    /* Los parametros que se le da a esta propiedad es: 
+    -Cuanto se va a mover la sombra en el eje x
+    -Cuanto se va a mover la sombra en el eje y 
+    - Tamano de desenfoque/ tamano sombra
+    - Borde de la somba, generalmente, queda a 0
+    - Por ultimo el color */
+    /*
+    La diferencia con el box-shadow es que no aqui no hay que indicar el tamano del borde de la sombra 
+    */
+    text-shadow: 4px, 5px, 10px, #fff;
+    /*IMPORTANTE -> si escribimos otra vez todas sus propiedades se intenficara el efecto*/
+    /*
+    Con esta propiedad podremos rotar el elemento, pasandole a la funcion el angulo que tiene que adoptar
+    */
+    transform: rotate(45deg);
+
+
+}
