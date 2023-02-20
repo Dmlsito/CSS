@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estos son los pseudolementos que hay:
+- ::Fist-line -> Esto no funciona en position: inline;
+- ::First-letter;
+- ::placeholder
+- ::after
+- ::before
+- ::selection
+*/
+.text{
+    padding: 20px;
+}
+/*De esta forma es como agregamos un pseudoelemento en un elemento
+*/
+.text::first-line{
+    /*De esta forma estaremos seleccionando siempre la primera linea, sin tener en cuenta que el tamano del window sea mas pequeno
+    */
+    color: blue;
+    font-size: 4em;
+}
+.text::first-letter{
+    /*De esta forma estaremos seleccionado la primera letra*/
+    font-size: 5em;
+}
+
+/*Estos dos pseudoelementos SI que forman parte del DOM pero por ejemplo before y after NO forman*/
+form{
+    margin: 200px auto;
+    display: block;
+    background-color: #555;
+    padding: 100px;
+    width: 50%;
+}
+input{
+    padding: 6px;
+    width: 100%;
+}
+/*Esto editar el placeholder de un input*/
+input::placeholder{
+    color: red;
+    font-size: 35px;
+}
+/*El seleccion nos permite editar el elemento que nosotros seleccionamos*/
+input::selection{
+    color: blue;
+}
+/*
+Ni el before ni el after no ocupa espacio en el DOM
+Before => Se indicara que contenido se pondra antes del elemento
+After => Se indicara que contenido se pondra despues del elemento
+*/
+b::before{
+    content: "Me subscribi";
+    color: red;
+}
+b::after{
+    content: "Todo tendencias";
+    color: yellow;
+}
