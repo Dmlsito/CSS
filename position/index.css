@@ -1,6 +1,6 @@
 *{
     font-weight: 900;
-    font-size: 30px;
+    font-size: 40px;
     
 }
 
@@ -67,7 +67,7 @@ El punto de referencia ahora es el viwport es decir la pantalla entera, a difere
 /*
 El punto de referencia podria cambiar si por ejemplo como vemos aqui se enontrasen dentro de un elemento, ya que el punto 
 pasaria a ser el propio elemento, pero para eso el elemento deberia estar POSICIONADO, por eso si cambiamos y ponemos en el 
-contenedor2 position: relative, ahora para colocar las cajas a cada esquina del contenedor tendriamos que tomarlo a el como referencia*/
+contenedor2 position: relative, ahora para colocar las cajas a cada esquina del contenedor tendriamos que tomarlo a el como referencia
 div{
     display: block;
     background: green;
@@ -110,4 +110,31 @@ div div{
     right: 0px;
     left: 0px
     
+}
+*/
+/*
+El position fixed es muy parecido al absolute, no reserva el espacio, se ajusta al contenido, etc
+LA UNICA DIFERENCIA QUE HAY ES QUE QUEDA FIJO ES DECIR POR EJEMPLO SI HACEMOS SCROLL NO SE MUEVE DE LA POSICION
+
+body{
+    padding-top: 120px;
+}
+.box-fixed{
+    margin: -100px;
+    background-color: red;
+    position: fixed;
+    
+}
+*/
+/*
+El position sticky conserva el espacio del elemento, es muy parecido al relative
+pero si nosotros le indicamos un top o un bottom, cuando llega a ese punto se convierte en fixed*/
+.box-fixed{
+    
+    background-color: red;
+    position: sticky;
+    opacity: .3;
+    top: 10px;
+
+ 
 }

@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+}
+/*
+El overflow es el contenido que sobresale del elemento o la pantalla, con esta propiedad podremos tratar ese contenido
+Con overflow auto indicaremos que si el contenido sale, por ejemplo sale del div se pueda hacer scroll dentro de este
+Como es un shorthand poodremos indicar en el eje x y en el eje y como tratarlo
+Con el overflow hidden le estamos indicando a la imagen que se esconda */
+div{
+    margin: 50px;
+    height: 350px;
+    width: 320px;
+    background: grey;
+    border: 3px solid red;
+    overflow: hidden;
+}   
+img{
+    position: relative;
+    top: 40px;
+    left: 50px;
+    
+}   
