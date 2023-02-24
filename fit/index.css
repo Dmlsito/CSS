@@ -21,4 +21,5 @@
         object-fit: none;
         */
         object-fit: cover;
+        object-position: right;
 }

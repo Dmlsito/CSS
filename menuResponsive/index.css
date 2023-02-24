@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-weight: 500px;
+    font-family: sans-serif;
+}
+.nav__responsive-ul{
+    display: none;
+}
+.nav{
+    background-color: #54a;
+}
+.nav__li{
+    display: inline-block;
+    padding: 12px;
+    color: #fff; 
+}
+.nav__li a {
+    color: #fff;
+    /*Con text-decoration none le borramos cualquier decoracion al text*/
+    text-decoration: none;
+}
+.nav__li i {
+    box-sizing: border-box;
+    text-align: right;
+    margin-right: 5px;
+
+}
+/*Con esto indicamos que cuando se haga hover en los iconos los enlaces que estan dentro de la li adopataran estas propiedaes*/
+.nav__li:hover > a{
+    color: #ccc;
+}
+.nav__li:hover{
+    color: #bbb;
+}
+
+    
+   
