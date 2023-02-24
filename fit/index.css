@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.image-container{
+    margin: 300px;
+    width: 300px;
+    height: 400px;
+}
+.image-container img{
+        border: 2px solid red;
+        height: 100%;
+        width: 100%;
+        /*Esto hace que la resolucion de la imagen se ajuste a la resolucion de la caja
+         object-fit: contain;
+        */
+        /*El objeto cover lo que pasa es que la imagen se ajusta al contenedor
+        object-fit: cover;*/
+        /*La propiedad object-fit: none pilla las propiedades por defecto de la imagen
+        object-fit: none;
+        */
+        object-fit: cover;
+}

@@ -1,0 +1,51 @@
+.caja1{
+    height: 200px;
+    width: 200px;
+    border: 4px solid red;
+    background: slateblue;
+}
+/*Hover*/
+.caja1:hover{
+    background: darkslateblue;
+    height: 300px;
+    width: 300px;
+    /*Transition es una propiedad que nos permite cambiar la velocidad en la que cambian las cosas 
+    Si ponemos transition: all nos ahorrariamos el indicar el tiempo para que cambie cada cosa
+    Si ponemos transition : all pero queremos que alguna propiedad cambie en un tiempo distinto simplemente se le
+    tendra que anadir*/
+    transition: all 1s;
+    border: 4px solid blue;
+}
+/*Esto nos permitira indicar que propiedades tendra si no se visito
+La unica forma de que deje de estar en rojo es que ya se haya vistado, pero para eso tiene que existir el boton*/
+.link:link{
+    color: red;
+}
+/*Aqui ocurre al reves que con el :link, podemos tambier editar las propiedades del enlace una vez se haya clickado en el*/
+.link:visited{
+    color : violet;
+}
+.caja2{
+    width: 250px;
+    height: 250px;
+    background: red;
+    margin: 25px;
+    transition: all 1s;
+}
+/*Evento que sucede cuando clickamos en el elemento*/
+.caja2:active{
+    background: blue;
+    width: 400px;
+}
+/*Evento que ocurre cuando el foco esta sobre el propio elemento, SE UTILIZA SOBRE TODO EN FORMULARIOS*/
+.input-de-prueba:focus{
+    background-color: gray;
+}
+.caja{
+    margin: 25px;
+}
+/*Con esto podemos cambiar los elementos que esten en el idioma que se este indicado*/
+.caja b:lang(en){
+    background: red;
+    padding: 20px;
+}
