@@ -34,5 +34,12 @@
     color: #bbb;
 }
 
+.nav__responsive-button{
+    float: right;
+    font-size: 25px;
+    padding: 5,5, 10, 10;
+}
+
+
     
    
