@@ -1,0 +1,39 @@
+
+
+body{
+    /*
+    En hexadecimal poner f es el valor maximo
+    Se pueden pone o 3 o 6 caracteres, ni 4 ni 5 SOLO TRES O SEIS
+    Si trabajamos con 3 caracteres el primero sera el rojo, el segundo el verde y tercero el azul*
+    De la misma forma si trabajamos con seis, los dos primeros seran rojo, el tercero y cuarto sera verde
+    y los dos ultimos seran azul
+    Si utlizamos 4 o 8 ese o esos ultimos seran la opacidad del color, que ira del 0 al 1/
+    */
+    background-color: #48e;
+}
+
+/*Esta forma no es la correcta de hacer una pagina responsive*/
+div{
+    width: 45%;
+    display: inline-block;
+    padding: 20px;
+    background-color: #ddd;
+}
+h1{
+    font-size: 24px;
+
+}
+.container2{
+    background-color: #bbb;
+}
+/*Aqui estamos indicando que cuando la pantalla alcanze resoluciones menores a 800 pixeles vamos a hacer algo
+Esta es la forma correcta de hacer una pagina responsive*/
+@media only screem and(max-width: 800px){
+    div{
+        display: block;
+        width: 100%;
+    }
+    h1{
+        font-size: 20px;
+    }
+}
