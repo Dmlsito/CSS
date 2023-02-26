@@ -3,12 +3,14 @@
     margin: 0;
     font-weight: 500px;
     font-family: sans-serif;
+    
 }
 .nav__responsive-ul{
     display: none;
 }
 .nav{
-    background-color: #54a;
+    background-color: #48e;
+    width: 100%;
 }
 .nav__li{
     display: inline-block;
@@ -34,12 +36,66 @@
     color: #bbb;
 }
 
-.nav__responsive-button{
-    float: right;
-    font-size: 25px;
-    padding: 5,5, 10, 10;
-}
 
-
+@media only screen and (max-width: 500px) {
+    .nav__ul { 
+        display: none;
+    }
+   .nav{
+    height: 37px;
+    width: 100%;
     
+   }
+   .nav__responsive-ul{
+    display: block;
+    position: absolute;
+    width: 100%;
+    margin-top: 37px;
+    padding-top: 27px;
+    height: 37px;
+    }
+    .nav__li-container{
+        position: relative;
+        top: -1000px;
+        height: calc(100vh - 64px);
+        background-color: #9bf;
+        transition: all 1s;
+        z-index: 1;
+        width: 80%;
+        padding-top: 20px;
+    }
+    .nav__responsive-li{
+        width: 100%;
+        padding: 9px 20px;
+        
+    }
+    .nav__responsive-li i {
+        box-sizing: border-box;
+        text-align: center;
+        margin-right: 5px;
+        width: 30px;
+        color: #016;
+    }
+    .nav__responsive-li a {
+        color: #016;
+        text-decoration: none;
+    }
+    .nav__responsive-button-container {
+        position: absolute;
+        width: 100%;
+        font-size: 25px;
+        background-color: #69c;
+        margin-top: -64px;
+        z-index: 100;
+    }
+    .nav__responsive-button {
+        padding: 6px 20px;
+        text-align: right;
+        width: 100%;
+    }
+    .nav__responsive-ul:hover > .nav__li-container{
+        top: -27px;
+    }
+}
+     
    

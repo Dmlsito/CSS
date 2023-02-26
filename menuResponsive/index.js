@@ -1,3 +1,6 @@
+
+//Este codigo seria una forma de ocultar el nav sin utilizar mediaQuerys
+/*
 const navUl = document.querySelector(".nav__ul");
 const navResponsive = document.querySelector(".nav__responsive-ul");
 
@@ -13,5 +16,5 @@ const navChange = () => {
 }
 //Metodo para controlar el cambio de tamano de la pantalla
 window.addEventListener("resize", navChange);
-
+*/
 
