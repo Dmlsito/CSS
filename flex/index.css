@@ -1,0 +1,100 @@
+
+/*TODAS LAS PROPIEDADES QUE VAMOS A VER AHORA AFECTAN A LOS ITEMS PERO SE ESCRIBEN EN EL CONTENEDOR*/
+.flex-container{
+    display: flex;
+    /*Este es la direccion por defecto
+    flex-direction: row;
+    Direccion contraria en el eje x
+    flex-direction: row-reverse;
+    flex-direction: column;
+    Este es el mismo efecto que el row-reverse
+    flex-direction: column-reverse;
+    */
+    /*Ahora si yo quiero que me respete las medidas del contenido posicionandolas debajo cuando el espacio es insuficiente
+    tenemos que utilizar la siguiente propiedad*/
+    /*De esta forma le decimos el programa que me respete los anchos de las cajas y cuando este ancho no se pueda mantener
+    que me las tire para abajo
+    flex-wrap: wrap;
+    */
+   
+    
+    /*Tambien podemos indicar que las cajas se vayan para arriba en vez de para abajo escribieno flex-wrap: wrap-reverse*/
+    /*Ahora si yo quiero centrar las cajas, como lo puedo hacer?
+    
+    justify-content: center;
+    /*Como podemos ver no todas las cajas estan separadas lo mismo utilizando space-between y space-around
+    Para ello podemos utilizar space-evenly*/
+    
+    /*Ahora ya vimos aliner en el main-axis, pasamos a ver como alinear en el cross-axis*/
+    height: 100vh;
+    flex-direction: row-reverse;
+    /*De esta forma centramos verticalmente
+     align-items: center;*/
+   
+    /*con end lo pone al final de todo
+    */
+    
+    /*La diferenci entre flex-start y strecht es que con flex-start no se ajusta en todo el cross-axis,  si no que se ajusta
+    a la altura del propio item y con stretch si, 
+    ocupa todo el espacio en el cross-axis
+     align-items: flex-start;*/
+    /*Aqui ocurre una cosa y es que como la propiedad wrap esta activada cuando la caja se vaya a la linea de abajo ya no estara
+    influenciado por el align-center, PORQUE EL ALIGN CENTER SOLO AFECTARA A LA PRIMERA FILA, para eso tendremos que 
+    utilizar align-content*/
+
+    /*Ahora de esta forma no se alinean en el centro si no que todas las lineas hacen caso a la propiedad flex-start
+    NO SOLO LA PRIMERA*/
+    /*UN TIP
+    Si nosotros indicasemos el align-content: flex-end y quisieramos que el wrap fuese para arriba esta bien utilizariamos 
+    wrp-reverse, pero esto no estaria realizando el efecto que nosostros querriamos realmente
+    Lo que tendriamos que utilizar seria align-content: baseline, DE ESTA FORMA SI QUE ESTARIA POSICIONANDO LAS CAJAS PARA ARRIBA
+    */
+}
+.flex-item{
+    background-color: #248;
+    color: #fff;
+    height: 80px;
+    /*El min-width se lo ponemos para poder parar al flex-wrap */
+    min-width: 150px;
+    text-align: center;
+    flex-basis: 350px;
+    /*Pasa una cosa curiosa con los margins dentro de un flex item y es que hacen todo lo contrario
+    a lo que tu le pidas*/
+    /*Flex grow coge el espacio que sobra y lo reparte en las cajas*
+    Esto hace tmb que sea flexible porque mientras quede espacio se va a ir repartiendo proporcionalmente
+    a cada caja
+     */
+     flex-grow: 1;
+     
+   
+    /*Pero en vez de darle el tamano sobrante a una sola tendriamos que especificarlo en el elemento*/
+}
+.red{
+    background: orange;
+    /*AQUI*
+    SI DA EL CASO DE QUE AQUI PONEMOS DOS EL ESPACIO SOBRANTE SE DIVIDIRA EN 3 Y DOS PARTES
+    IRAN PARA LA CAJA NARANJA Y UNA PARA LA PARTE AZUL
+    flex-grow: 1;
+    */
+    flex-basis: 350px;
+    /*Considera mas importante el flex-basis que el witdh, pero es basicamente lo miso*/
+   
+    /*Con esto le estamos indicando que la caja naranja que ceda el doble de espacio que estan cediendo
+    el resto de cajas para que se ajusten todas las cajas al espacio dado
+    Por defecto todas las cajas tienen flex-shrink de 1 
+    Si ponemos 0 no cede nada del espacio por lo que su ancho sera de 300px, como lo hemos definido
+    en el flex-basis*/
+    flex-shrink: 0;
+    /*Esto indica el orden en el que se posicionara cada elemento en el main-axis
+    Cuando mas mayor sea el numero mas a la derecha se encontrara es decir mas cerca del main-end*/
+    order: 4;
+    
+}
+.green{
+    background: green;
+    /*De esta forma alineamos un solo item, que lo podemos mover por el cross-axis*/
+    align-self: flex-start;
+    /*Aqui si ponemos otro flex-grow ahora le repartiremos el espacio sobrante entre dos cajas
+    flex-grow: 1;
+    */
+}

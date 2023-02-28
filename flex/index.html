@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+    
+    <!--
+        Teoria de Flex
+
+        Flex requiere dos cosas, un flex container y un flex item
+        El flex container de por si se comporta como si tuviera la propiedad display: block, pero lo que es realmente
+        interesante es como se comportan los elementos que estan dentro de ese container
+        Flex box tiene dos ejes, el main-axis, que seria el eje x y el cross-axis, que seria el eje y
+        Esto a su vez va a tener dos direcciones en cada eje, el main-start y el main-end es, respectivamente, como se indica
+        el comienzo y el final del main-axis
+        De la misma forma que tenemos estas dos direcciones en el main-axis tambien las tenemos en e cross-axis
+        Los flex-items son los hijos directos 
+
+    -->
+    <!--Si queremos por ejemplo alinear estas cajas de manera vertical tendremos que cambiar la direccion el main-axis-->
+    <div class = "flex-container">
+      <div class = "flex-item red">Caja flexible</div>
+      <div class = "flex-item">Caja flexible</div>
+      <div class = "flex-item green">Caja flexible</div>
+      
+    </div>
+</body>
+</html>
