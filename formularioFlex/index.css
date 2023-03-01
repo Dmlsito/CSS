@@ -52,7 +52,7 @@ body {
     order: 5;
 }
 .form__input{
-    color: #fff;
+   color: #fff;
    width: 100%;
    padding: 7px;
    margin: 6px 0;
@@ -84,4 +84,4 @@ body {
     
 }
 .form input[type = "submit"]:active {
-    background-color: linear-gradient(to bottom, #072, #050);}
+    background-color: linear-gradient(to bottom, #072, #050);} 
