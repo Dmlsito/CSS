@@ -1,7 +1,9 @@
 
 /*TODAS LAS PROPIEDADES QUE VAMOS A VER AHORA AFECTAN A LOS ITEMS PERO SE ESCRIBEN EN EL CONTENEDOR*/
 .flex-container{
+    margin: 50px;
     display: flex;
+    outline: 3px solid red;
     /*Este es la direccion por defecto
     flex-direction: row;
     Direccion contraria en el eje x
@@ -16,7 +18,7 @@
     que me las tire para abajo
     flex-wrap: wrap;
     */
-   
+    justify-content: space-evenly;
     
     /*Tambien podemos indicar que las cajas se vayan para arriba en vez de para abajo escribieno flex-wrap: wrap-reverse*/
     /*Ahora si yo quiero centrar las cajas, como lo puedo hacer?
@@ -26,8 +28,9 @@
     Para ello podemos utilizar space-evenly*/
     
     /*Ahora ya vimos aliner en el main-axis, pasamos a ver como alinear en el cross-axis*/
-    height: 100vh;
-    flex-direction: row-reverse;
+    height: 100px;
+    flex-wrap: wrap;
+    
     /*De esta forma centramos verticalmente
      align-items: center;*/
    
@@ -51,20 +54,21 @@
     */
 }
 .flex-item{
+    flex-grow: 1;
     background-color: #248;
     color: #fff;
     height: 80px;
     /*El min-width se lo ponemos para poder parar al flex-wrap */
-    min-width: 150px;
+    
     text-align: center;
-    flex-basis: 350px;
+   
     /*Pasa una cosa curiosa con los margins dentro de un flex item y es que hacen todo lo contrario
     a lo que tu le pidas*/
     /*Flex grow coge el espacio que sobra y lo reparte en las cajas*
     Esto hace tmb que sea flexible porque mientras quede espacio se va a ir repartiendo proporcionalmente
     a cada caja
      */
-     flex-grow: 1;
+    
      
    
     /*Pero en vez de darle el tamano sobrante a una sola tendriamos que especificarlo en el elemento*/
@@ -76,7 +80,7 @@
     IRAN PARA LA CAJA NARANJA Y UNA PARA LA PARTE AZUL
     flex-grow: 1;
     */
-    flex-basis: 350px;
+    
     /*Considera mas importante el flex-basis que el witdh, pero es basicamente lo miso*/
    
     /*Con esto le estamos indicando que la caja naranja que ceda el doble de espacio que estan cediendo
@@ -84,16 +88,17 @@
     Por defecto todas las cajas tienen flex-shrink de 1 
     Si ponemos 0 no cede nada del espacio por lo que su ancho sera de 300px, como lo hemos definido
     en el flex-basis*/
-    flex-shrink: 0;
+   
     /*Esto indica el orden en el que se posicionara cada elemento en el main-axis
     Cuando mas mayor sea el numero mas a la derecha se encontrara es decir mas cerca del main-end*/
-    order: 4;
+
     
 }
 .green{
+    width: 200px;
     background: green;
     /*De esta forma alineamos un solo item, que lo podemos mover por el cross-axis*/
-    align-self: flex-start;
+    
     /*Aqui si ponemos otro flex-grow ahora le repartiremos el espacio sobrante entre dos cajas
     flex-grow: 1;
     */

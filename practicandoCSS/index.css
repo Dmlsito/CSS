@@ -2,64 +2,298 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+body{
+    background: linear-gradient(to right, #fff, #104);
 }
 .container-ul {
-    margin: 20px;
-    height: 60px;
-    background: #eee;
-    border-radius: 45%;
+    padding: 0px 100px;
+    display: flex;
+    margin: 30px;
+    height: 140px;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .container-ul__ul {
+    min-width: 250px;
+    margin-left: 40px;
     display: flex;
-    justify-content: space-evenly;
-    padding: 15px;
     list-style: none;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.container-ul__image-Container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 150px;
+    max-width: 150px;
+    height: 100%;
+    margin-left: 50px;
+    
+}
+.container-ul__image-Container-image {
+    box-shadow: 2px 2px 40px 0 #87f;
+    border-radius: 50%;
+    width: 100%;
+    height: 140px ;
+    object-fit: cover;
+   
+}
+.container-ul__image-Container-image img {
+    border-radius: 50%;
+    width: 100%;
+    height: 140px ;
+    object-fit: cover;
+    border: 3px solid #87f;
+    outline: 3px solid #104;
+}
+
+.container-ul__ul-li:hover {
+    transform: scale(1.1);
 }
 .container-ul__ul-li {
- font-size: 20px; 
+    margin-right: 90px;
+    margin-top: 10px;
 }
 .container-ul__ul-li a {
     text-decoration: none;
+    font-size: 30px; 
+    color: #eee;
 }
 .container-info{
+    padding: 20px;
+    margin: auto;
     display: flex;
-    width: 100%;
     height: 800px;
     justify-content: center;
+  
 }
 .container-info__principal {
     display: flex;
     flex-direction: column;
-    box-shadow: 2px 2px 100px 0 #222;
+    box-shadow: 2px 2px 100px 0 #87f;
     border-radius: 10%;
+    min-width: 300px;
     align-self: center;
-    height: 80%;
-    width: 50%;
     background: #eee;
     padding: 20px;
+    border: 3px solid #87f;
+    outline: 3px solid #104;
 }
 .container-info__principal h2 {
-    margin: 10px 20px;
+    margin: 30px 20px;
     font-size: 40px;
-    
+    text-align: center;
+    color: #104;
 }
 .container-info__principal p {
-    margin: 20px;
-    font-size: 20px;
+    margin: 60px, 20px;
+    font-size: 23px;
     text-align: center;
+    color: #104;
 }
-
 .links-list { 
-    margin: 60px 0;
+    margin: 80px 0;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     list-style: none;
 }
 .links-list li {
-    padding: 0px 60px;
+    text-align: center;
+    border: 2px solid #104;
+    background: #87f;
+    width: 140px;
+    padding: 5px;
     font-size: 20px;
+   
 }
 .links-list i {
-    padding: 5px;
+    padding: 5px; 
+    color: #104;
 }
+.links-list a {
+    text-decoration: none;
+    color: #fff;
+}
+.links-list li:hover {
+    border: 3px solid #87f;
+    background: #84f;
+    cursor:pointer;
+}
+.Skills-title {
+    text-align: center;
+    margin-bottom: 10vh;
+    font-size: 80px;
+    color: #eee;
+}
+.container-skills-transparent {
+    display: flex;
+    margin:  auto;
+    height: 400px;
+    justify-content: center;
+    padding: 20px;
+}
+.container-skills-transparent__container {
+    padding: 40px;
+    background: #eee;
+    display: flex;
+    height: 200px;
+    width: 1300px;
+    border-radius: 30%;
+    box-shadow: 2px 2px 100px 0 #87f;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 3px solid #87f;
+    outline: 3px solid #104;
+}
+.container-skills-transparent__container-img {
+    width: 100px;
+    height: 100px;
+    align-self: center;
+}
+.proyects-title { 
+    margin-top: 15vh;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 80px;
+    color: #eee;
+}
+.container-cards {
+    margin: auto;
+    padding: 20px;
+    height: 900px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.container-cards__container-card {
+    height: 500px;
+    background: #eee;
+    width: 500px;
+    margin-top: 40px;
+    box-shadow: 2px 2px 100px 0 #87f;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items:center;
+    transition: 1s;
+    border: 3px solid #87f;
+    outline: 3px solid #104;
+    border-radius: 20px;
+}
+.container-cards__container-card img{
+    align-self: center;
+    width: 300px;
+    height: 80%;
+    object-fit: cover;
+    transition: 1s;
+    border: 2px solid #87f;
+}
+.proyects-title__titles-proyects {
+    text-align:center;
+    transition: 1s;
+    font-size: 30px;
+    height: 40px;
+    color: #104;
+}
+.container-cards__container-card img:hover{
+    transform: scale(1.1);
+
+}
+.form-title{
+    text-align: center;
+    margin-top: -20px;
+    font-size: 80px;
+    color: #eee;
+}
+.container-form{
+    margin: auto;
+    display: flex;
+    height: 500px;
+    padding: 20px;
+    justify-content: center;
+   
+}
+.container-form__form{
+    width: 600px;
+    min-width: 300px;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    flex-flow: column;
+    border: 3px solid #87f;
+    outline: 3px solid #104;
+    box-shadow: 2px 2px 100px 0 #87f;
+    align-items: center;
+    justify-content: center;
+    background: #eee;
+    border-radius: 30px;  
+}
+.container-form__form input{ 
+    margin: 20px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid #87f;
+    background: transparent;
+    color: #104;
+    text-decoration: none;
+    font-size: 15px;
+}
+.container-form__form input::placeholder{
+    color: #104;
+    font-weight: 900;
+}
+.container-form__form textarea::placeholder{
+    color: #104;
+    font-weight: 900;
+}
+.container-form__form input:focus{
+    outline: none;
+}
+.container-form__form textarea {
+    width: 100%;
+    height: 80px;
+    border: none;
+    resize: none;
+    background: transparent;
+    color: #104;
+    border-bottom: 2px solid #87f;
+    font-size: 15px;
+}
+.container-form__form textarea:focus{
+    outline: none;
+}
+.container-form__form input[type = "submit"]{
+    width: 100px;
+    color: #104;
+    border: 2px solid #104;
+    background: #87f;
+    font-weight: 900;
+}
+.container-form__form input[type = "submit"]:hover{
+    border: 3px solid #87f;
+    background: #84f;
+    cursor:pointer;
+}
+
+
+@media screen and (max-width: 790px) {
+    .container-skills-transparent__container {
+        height: 50vh;
+    }
+  
+}
+@media screen and (max-width: 1025px) {
+    .form-title{
+        margin-top: 40vh;
+    }
+  
+}
+

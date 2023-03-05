@@ -12,30 +12,76 @@
     <header>
         <nav class = "nav">
             <div class = "container-ul">
+                <div class = "container-ul__image-Container">
+                    <div class = "container-ul__image-Container-image">
+                        <img src = "fotoPerfil.jpg">
+                    </div>
+                </div>
                 <ul class = "container-ul__ul">
-                    <li class = "container-ul__ul-li"><i class = ""></i><a href = "">About me</a></li>
-                    <li class = "container-ul__ul-li"><a href = "">Projects</a></li>
-                    <li class = "container-ul__ul-li"><a href = "">Contact me</a></li>
-                </ul>
+                    <li class = "container-ul__ul-li"><i class = ""></i><a href = "#About-me">About me</a></li>
+                    <li class = "container-ul__ul-li"><a href = "#Projects">Projects</a></li>
+                    <li class = "container-ul__ul-li"><a href = "#Form">Contact me</a></li>
+                    <li class = "container-ul__ul-li"><a href = "#Skills">Skills</a></li>
+            </ul>
             </div>
         </nav>
     </header>
     <article>
         <section>
-            <div class = "container-info">
+            <div class = "container-info" id = "About-me">
                 <div class = "container-info__principal">
-                    <h2>Hi, I'm Daniel Mallo Lopez...</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing 
-                        elit. Ipsam deleniti ab vero doloribus quis minus maiores dolores recusandae quod, quibusdam fugiat dolor! Tempora est distinctio ex aliquam ratione sequi, laudantium officiis laborum nobis ea. Tempora vero facilis error adipisci, rem sapiente! Cum 
-                        ipsum blanditiis voluptates odit minus aliquid consequatur distinctio?</p>
+                    <h2>Hola, soy Daniel Mallo Lopez...</h2>
+                    <p>Soy desarollador front-end con algunos conocimientos en back-end.
+                        <br>
+                        ¡¡¡Trabajemos juntos!!!
+                    </p>
                     <ul class = "links-list">
-                        <li><a href = "https://github.com/Dmlsito"><i class = "fa-brands fa-github"></i></a></i></li>
-                        <li><a href = "https://www.linkedin.com/in/daniel-mallo-l%C3%B3pez-416354241/"><i class="fa-brands fa-linkedin"></i></a></i></li>
+                        <li><a href = "https://github.com/Dmlsito"><i class = "fa-brands fa-github"></i>Github</a></i></li>
+                        <li><a href = "https://www.linkedin.com/in/daniel-mallo-l%C3%B3pez-416354241/"><i class="fa-brands fa-linkedin"></i>Linkedin</a></i></li>
                     </ul>
                 </div>
             </div>
         </section>
     </article>
+    <article>
+        <h2 class = "Skills-title" id = "Skills">Skills</h2>
+        <div class = "container-skills-transparent" >
+            <div class = "container-skills-transparent__container" >
+                <img src = "Htmlimage.png" class = "container-skills-transparent__container-img">
+                <img src = "CSSimage.png" class = "container-skills-transparent__container-img">
+                <img src = "JavaScriptImage.png" class = "container-skills-transparent__container-img">
+                <img src = "java.png" class = "container-skills-transparent__container-img">
+                <img src = "DartImagen.png" class = "container-skills-transparent__container-img">
+                <img src = "FlutterImage.png" class = "container-skills-transparent__container-img">
+            </div>
+        </div>
+    </article>
+    <article>
+        <h2 class = "proyects-title">Proyectos</h2>
+        <div class = "container-cards" id = "Projects">
+            <div class = "container-cards__container-card">
+                <h2 class = "proyects-title__titles-proyects" id = "title-img1">Clicker</h2>
+                <img src = "Clicker.png" class = "container-cards__container-card-image" id = "img1">
+            </div>
+            <div class = "container-cards__container-card">
+                <h2 class = "proyects-title__titles-proyects" id = "title-img2">WarioWare</h2>
+                <img src = "WarioWare.PNG" class = "container-cards__container-card-image" id = "img2">
+            </div>
+        </div>
+        </h2>
+    </article>
+    <article>
+        <h2 class = "form-title">¡Si quieres, hablemos!</h2>
+        <div class = "container-form" id = "Form">
+            <form class = "container-form__form">
+                <input type = "text" placeholder = "Nombre completo" id = "user-name">
+                <input type = "text" placeholder = "Correo electronico" id = "user-email">
+                <textarea placeholder = "Asunto" id = "user-content"></textarea>
+                <input type = "submit" class = "container-form__form-input">
+            </form>
+        </div>
+    </article>
     <script src="index.js"></script>
+    <script src = "formulario.js"></script>
 </body>
 </html>
