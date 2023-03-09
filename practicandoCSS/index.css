@@ -35,7 +35,7 @@ body{
     
 }
 .container-ul__image-Container-image {
-    box-shadow: 2px 2px 40px 0 #87f;
+    box-shadow: 2px 2px 60px 0 #fff;
     border-radius: 50%;
     width: 100%;
     height: 140px ;
@@ -47,8 +47,6 @@ body{
     width: 100%;
     height: 140px ;
     object-fit: cover;
-    border: 3px solid #87f;
-    outline: 3px solid #104;
 }
 
 .container-ul__ul-li:hover {
@@ -67,18 +65,19 @@ body{
     padding: 20px;
     margin: auto;
     display: flex;
-    height: 800px;
+    height: 450px;
     justify-content: center;
   
 }
 .container-info__principal {
+    margin-top: 10vh;
     display: flex;
     flex-direction: column;
     box-shadow: 2px 2px 100px 0 #87f;
     border-radius: 10%;
     min-width: 300px;
-    align-self: center;
-    background: #eee;
+    height: 100%;
+    background: linear-gradient(to bottom, #fff, #a7f);
     padding: 20px;
     border: 3px solid #87f;
     outline: 3px solid #104;
@@ -109,6 +108,7 @@ body{
     width: 140px;
     padding: 5px;
     font-size: 20px;
+    font-weight: 900;
    
 }
 .links-list i {
@@ -129,6 +129,7 @@ body{
     
 }
 .Skills-title {
+    margin-top: 35vh;
     text-align: center;
     margin-bottom: 10vh;
     font-size: 80px;
@@ -137,15 +138,15 @@ body{
 .container-skills-transparent {
     display: flex;
     margin:  auto;
-    height: 400px;
+    height: 200px;
     justify-content: center;
     padding: 20px;
 }
 .container-skills-transparent__container {
-    padding: 40px;
-    background: #eee;
+    padding: 30px;
+    background: linear-gradient(to bottom, #fff, #a7f);
     display: flex;
-    height: 200px;
+    height: 100%;
     width: 1300px;
     border-radius: 30%;
     box-shadow: 2px 2px 100px 0 #87f;
@@ -161,16 +162,16 @@ body{
     align-self: center;
 }
 .proyects-title { 
-    margin-top: 15vh;
+    margin-top: 30vh;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 10vh;
     font-size: 80px;
     color: #eee;
 }
 .container-cards {
     margin: auto;
     padding: 20px;
-    height: 900px;
+    height: 500px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -178,7 +179,7 @@ body{
 }
 .container-cards__container-card {
     height: 500px;
-    background: #eee;
+    background: linear-gradient(to bottom, #fff, #a7f);
     width: 500px;
     margin-top: 40px;
     box-shadow: 2px 2px 100px 0 #87f;
@@ -191,12 +192,16 @@ body{
     outline: 3px solid #104;
     border-radius: 20px;
 }
-.container-cards__container-card img{
-    align-self: center;
+
+.container-cards__container-card-link{
+    height: 450px;
+}
+.container-cards__container-card-link img{
     width: 300px;
-    height: 80%;
+    height: 90%;
     object-fit: cover;
     transition: 1s;
+    border-radius: 20px;
     
 }
 .proyects-title__titles-proyects {
@@ -212,9 +217,11 @@ body{
 }
 .form-title{
     text-align: center;
-    margin-top: -20px;
+    margin-top: 35vh;
     font-size: 80px;
-    color: #eee;
+    color: #fff;
+    margin-bottom: 5vh;
+    font-weight: 900;
 }
 .container-form{
     margin: auto;
@@ -235,7 +242,7 @@ body{
     outline: 3px solid #104;
     box-shadow: 2px 2px 100px 0 #87f;
     align-items: center;
-    background: #eee;
+    background: linear-gradient(to bottom, #fff, #a7f);
     border-radius: 30px;  
 }
 .container-form__form input{ 
@@ -304,11 +311,14 @@ body{
     .container-skills-transparent__container {
         height: 50vh;
     }
+    .proyects-title{
+        margin-top: 45vh;
+    }
   
 }
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1040px) {
     .form-title{
-        margin-top: 40vh;
+        margin-top: 85vh;
     }
   
 }
