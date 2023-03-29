@@ -13,9 +13,13 @@ body {
     display: grid;
     /*De esta forma estamos definiendo tres columnas y tres filas, cada una de ellas con 150px
      No solo podemos inicializar las columnas y filas con px tam*/
-    grid-template-rows: 150px 150px 150px;
-    /*grid-template-columns: 150px 150px 150px;*/
+    /*grid-template-rows: 150px 150px 150px;
+    /*grid-template-columns: 150px 150px 150px;
+    Tambien podemos utilizar el metodo repeat() para definir el numero de columnas y filas que queremos mostrar y el tamano de ellas*/
+    /*Primero indicamos el numero de columnas que queremos definir y despues indicamos el tamano que queremos darle*/
 
+    grid-template-rows: repeat(3, 150px) 1fr ;
+    
     /*En grid tambien existen propiedades como flex-grow, pero se indican de forma distinta*/
     grid-template-columns: 150px 150px 150px 1fr;
     /*En este caso indicar que el ancho de una columna sera 1fr sera como si estuvieramos indicando en flex que ese container
@@ -31,9 +35,9 @@ body {
 .grid-item:first-child {
     background: #900;
     /*De esta forma estariamos fusioanando las dos primeras columnas*/
-    grid-column: 1 / 3;
-    /*De esta otra forma estariamos fusionando las dos primeras filas*/
-    grid-row: 1 / 3;
+    /*grid-column: 1 / 3;
+    /*De esta otra forma estariamos fusionando las dos primeras filas
+    grid-row: 1 / 3;*/
     
 }
 /*De esta forma seleccionamos el segundo elemento de la grid, es mejor hacerlo de esta manera que no poniendo second-child*/
@@ -47,6 +51,6 @@ body {
     /*Despues tenemos span, que nos facilita un poco la vida si no entendemos bien lo de arriba, con el span
     no tenemos que contar lineas si no que desde la fila o columna en donde estemos esta sera el punto de partida y con
     span x le indicaremos la cantidad de filas o columnas que queremos fusionar*/
-    grid-column: 3 / span 2;
-    grid-row: 1 / span 2;
+   /* grid-column: 3 / span 2;
+    grid-row: 1 / span 2;*/
 }
