@@ -1,0 +1,65 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid-container{
+    border: 3px solid #aaa;
+    display: grid;
+    background: #222;
+    height: 600px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    /*Las propiedades de flex funcionan tambien con grid
+    Al darle estas dos propiedades y no tener ningun tamano definido las celdas se achicaran
+    justify-items: center;
+    align-items: center;
+    */
+    /*En grid podemos alinear items y columnas o filas
+    para alinear items utilizamos las propiedades que vimos anteriormente
+    y para alinear filas y clumnas utilizamos las siguientes propiedades ->*/
+    
+   /* justify-content: space-evenly; /*Con justify-content podemos alinear las columnas*/
+    /*align-content: space-between; Con align-content podemos alinear las filas*/ 
+    align-items: center;
+    justify-items: center;
+    /*En este caso las celdas no pueden recibir como parametro space-between, around o evenly, eso solo lo pueden recibir las filas y columnas, osea
+    solo se puede definir en justify-content y align-content
+    */
+}
+.grid-item{
+    border: 2px solid #000;
+    background: #444;
+    font-size: 30px;
+    padding: 50px;
+}
+/*Ahora entramos con las propiedades propias de un solo item, para cuando queramos alinear un item en concreto*/
+.grid-item:nth-child(1) {
+    /*De esta forma estariamos trabajando la alineacion en el eje vertical*/
+    align-self: start;
+    justify-self: start;
+}
+.grid-item:nth-child(3) {
+    align-self: start;
+    justify-self: end;
+}
+.grid-item:nth-child(7) {
+    align-self: end;
+    justify-self: start;
+}
+.grid-item:nth-child(9) {
+    align-self: end;
+    justify-self: end;
+}
+.grid-item:nth-child(2) {
+    align-self: end;
+}
+.grid-item:nth-child(8) {
+    align-self: start;
+}
+.grid-item:nth-child(4) {
+    justify-self: end;
+}
+.grid-item:nth-child(6) {
+    justify-self: start;
+}

@@ -8,7 +8,9 @@
    background: #222;
    display: grid;
    grid-template-rows: repeat(3, 150px) ;
-   grid-template-columns: 150px 150px 1fr;
+   /*Con esta propiedad lo que estamos diciendo es, que como minimo mida 100px y como maximo mida 300px*/
+   /*Si nosotros queremos ir crenando columnas a medida que vamos teniendo el espacio suficiente, esto es justo lo que hace auto-fill*/
+   grid-template-columns: repeat(auto-fill, minmax(100px, 300px));
    grid-gap: 20px;
    grid-auto-rows: 200px;
 }
@@ -20,6 +22,10 @@
     justify-content: center;
 }
 .grid-item:nth-child(1){
+    /*
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
+    */
 }
+
+/*Para poder crear un grid dinamico necesitamos jugar con varias propiedades*/
